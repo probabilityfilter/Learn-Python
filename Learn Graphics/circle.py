@@ -25,6 +25,5 @@ def getColor(px,py,winSize):
     B = int(((c2[2]-c1[2])*px/winSize)+c1[2])
     return R,G,B
 
-
 x = input("How many circles do you want? ") 
 main(int(x))
