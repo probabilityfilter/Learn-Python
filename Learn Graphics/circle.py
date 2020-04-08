@@ -12,14 +12,15 @@ def main(circleCount):
             c = Circle(Point(x,y), circleRadius)
             colorGrad = getColor(x,y,400)
             c.setFill(color_rgb(colorGrad[0],colorGrad[1],colorGrad[2]))
+            c.setWidth(0)
             c.draw(win)
 
     win.getMouse() # pause for click in window
     win.close()
 
 def getColor(px,py,winSize):
-    c1 = (0,0,0)
-    c2 = (255,255,255)
+    c1 = (255,165,0)
+    c2 = (255,99,71)
     R = int(((c2[0]-c1[0])*px/winSize)+c1[0])
     G = int(((c2[1]-c1[1])*px/winSize)+c1[1])
     B = int(((c2[2]-c1[2])*px/winSize)+c1[2])
