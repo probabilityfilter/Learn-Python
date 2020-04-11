@@ -12,14 +12,14 @@ def main(W):
     win.close
 
 def drawLines(windowObj, orientation, x1, y1, x2, y2):
-        for x in range(x1,x2,10):
-            if orientation == "v":
-                aLine = Line(Point(x,y1), Point(x,y2))
-            else:
-                aLine = Line(Point(x1,x), Point(x2,x))
-            aLine.setWidth(2)
-            aLine.setOutline("white")
-            aLine.draw(windowObj)
+    for x in range(x1,x2,10):
+        if orientation == "v":
+            aLine = Line(Point(x,y1), Point(x,y2))
+        else:
+            aLine = Line(Point(x1,x), Point(x2,x))
+        aLine.setWidth(2)
+        aLine.setOutline("white")
+        aLine.draw(windowObj)
 
 def inset(windowObj, windowWd, r):
     start = int(windowWd * r)
