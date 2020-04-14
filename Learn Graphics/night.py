@@ -44,4 +44,5 @@ def drawMoon(sky, moonLoc):
         moonCover.move(1,0)
         update(15)
 
-main()
+if __name__ == '__main__':
+    main()
